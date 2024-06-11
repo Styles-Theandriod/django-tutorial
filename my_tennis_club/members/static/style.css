@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 2px solid red; */
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation{
+    display: flex;
+    /* background-color: red; */
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    /* border: 2px dashed #2196f3; */
+    width:90%;
+    margin: auto;
+    /* margin-top: 20px; */
+}
+
+.navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.navlist a{
+    color: #008cff;
+    font-weight: 900;
+}
+
+.logo{
+    font-size: 30px;
+    color: #008cff;
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn_container{
+    /* background-color: #008cff; */
+    padding: 10px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.move_btn{
+    background-color:#008cff;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-items{
+    display: none;
+    background-color: #008cff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    padding: 20px;
+}
+
+.dropdown-items li{
+    margin-top: 10px;
+}
+
+.dropdown-items a{
+    color: white;
+}
+
+.dropdown:hover .dropdown-items{
+    display: block;
+}
+
+.hero-section {
+    /* width: 100%; */
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2rem 4.5rem;
+    column-gap: 1rem;
+    background-color: #ffffff;
+    /* background-image: linear-gradient(20deg, #fdf2fa, white); */
+    /* background-image: radial-gradient(#fdf2fa, white); */
+    /* background: rgb(246, 96, 213); */
+    background: linear-gradient(349deg, rgba(1, 141, 255, 0.204) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.left-hero-section {
+    width: 50%;
+    height: auto;
+    /* padding-top: 2rem; */
+}
+
+.main-hero-text {
+    width: fit-content;
+    height: auto;
+}
+
+.main-hero-text h1 {
+    font-size: 3.125rem;
+    /* font-family: 'Poppins', sans-serif; */
+    line-height: 100%;
+    color: #008cff;
+    font-weight: 700;
+    font-family: "Sora", sans-serif;
+    /* letter-spacing: -1px; */
+    word-spacing: 4px;
+}
+
+.description-hero-text {
+    width: fit-content;
+    height: auto;
+    margin-top: 0.5rem;
+}
+
+.description-hero-text p {
+    font-size: 1.5rem;
+    color: #008cff;
+}
+
+.s {
+    margin-top: 20px;
+}
+.right-header-box {
+    width: auto;
+    height: auto;
+}
+
+.right-header-box button {
+    font-size: 1rem;
+    background-color: #544e7e;
+    color: white;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    letter-spacing: 0.35px;
+    border-radius: 48px;
+}
+
+.hero-list-box {
+    margin-top: 3rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.3rem;
+}
+
+.highlight-button {
+    padding: 4px 16px;
+    background-color: #f9f6ff;
+    color: #37008e;
+    border-radius: 100px;
+    border: 1px solid #6202FF;
+    outline: none;
+    letter-spacing: 0px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.list-item {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.3rem;
+    padding-left: 0.8rem;
+    margin-bottom: 0.6rem;
+    border-left: 1px solid #6202FF;
+}
+
+.list-text {
+    width: fit-content;
+    height: auto;
+}
+
+.hero-cta {
+    width: auto;
+    height: auto;
+    margin-top: 3.5rem;
+}
+
+
+/* Center the loader on the screen */
+#loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Optional: background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+}
+
+#main-content {
+    display: none; /* Initially hide the main content */
+}
